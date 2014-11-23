@@ -1,6 +1,7 @@
 #Load list of features and activity descriptors
 script.dir <- dirname(sys.frame(1)$ofile)
-setwd(paste(script.dir,"/UCI HAR Dataset",sep="")
+print(paste(script.dir,"/UCI HAR Dataset",sep=""))
+setwd(paste(script.dir,"/UCI HAR Dataset",sep=""))
 featureList <- read.table("features.txt")
 activityList <- read.table("activity_labels.txt")
 #Load datasets
